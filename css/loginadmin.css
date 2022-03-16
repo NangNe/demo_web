@@ -1,0 +1,79 @@
+         body {
+             background: #010001;
+         }
+         
+         .container {
+             height: 430px;
+             width: 430px;
+             background: #010001;
+             margin-top: 150px;
+             box-shadow: 0px 0px 12px 5px rgb(213, 226, 235);
+         }
+         
+         .form-field {
+             margin-top: 25px;
+         }
+         
+         .labelAd {
+             margin-top: 20px;
+             margin-left: 170px;
+             font-size: 25px;
+             color: rgb(131, 247, 237);
+             font-family: "Helvetica Neue", ;
+         }
+         
+         .label {
+             font-size: 15px;
+             color: rgb(131, 247, 237);
+             font-family: "Helvetica Neue", ;
+             margin-left: 6px;
+         }
+         
+         .row {
+             margin-top: 35px;
+         }
+         
+         .input-pass,
+         .input-text {
+             display: block;
+             width: 100%;
+             height: 36px;
+             border-width: 0 0 2px 0;
+             border-color: rgb(213, 226, 235);
+             font-size: 15px;
+             line-height: 26px;
+             font-weight: 400;
+             outline: none;
+             background-color: #010001;
+             color: rgb(213, 226, 235);
+             ;
+         }
+         
+         .submit-btn {
+             background: #010001;
+             color: rgb(213, 226, 235);
+             text-transform: uppercase;
+             font-size: 10px;
+             padding: 8px 16px;
+             border: none;
+             width: 100px;
+             margin-left: 150px;
+             box-shadow: 0px 0px 10px 5px rgb(213, 226, 235);
+         }
+         
+         .submit-btn:hover {
+             background: rgb(213, 226, 235);
+             color: #010001;
+             box-shadow: 0px 0px 10px 5px rgb(213, 226, 235);
+         }
+         
+         .icon {
+             color: rgb(213, 226, 235);
+             margin-left: 200px;
+             font-size: 15px;
+         }
+         
+         .back {
+             font-size: 25px;
+             margin-top: 5px;
+         }

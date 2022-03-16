@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width" ,initial-scale=1.0 ">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet " href="bootstrap/bootstrap.min.css ">
+    <script src="bootstrap/bootstrap.min.js "></script>
+    <script src="Js/jquery-3.6.0.min.js "></script>
+    <script src="Js/popper.min.js "></script>
+    <link rel="stylesheet " type="text/css " href="css/style.css ">
+    <link rel="stylesheet " href="font-awesome-4.7.0/css/font-awesome.min.css ">
+    <title>ShopingCard</title>
+  </head>
+  <body>
+    <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-cl menu_position ">
+        <button class="navbar-toggler " type="button " data-toggle="collapse " data-target="#navbarTogglerDemo03 " aria-controls="navbarTogglerDemo03 " aria-expanded="false " aria-label="Toggle navigation ">
+        <span class="navbar-toggler-icon "></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarTogglerDemo03 ">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0 ">
+                <li class="nav-item ">
+                    <a class="navbar-brand " href="indexlg.html ">
+                        <img class="img-circle " src="images/logo.png " width="35 " height="30 " alt=" ">
+                    </a>
+                </li>
+                <li class="nav-item ">
+                    <h5 class="nav-link font-new text-warning "> NKV Fashion</h5>
+                </li>
+                <li class="nav-item  ">
+                    <a class="nav-link font-new1 " href="indexlg.html ">Home<span class="sr-only ">(current)</span></a>
+                </li>
+
+                <li class="nav-item dropdown ">
+                    <a href="# " class="dropdown-toggle nav-link font-new1 " data-toggle="dropdown " role="button " aria-haspopup="true " aria-expanded="true "> <span class="nav-label ">Gender</span> <span class="caret "></span></a>
+                    <ul class="dropdown-menu dropdown-content ">
+                        <li><a class="font-new1 " href="girlclothes.html ">Girl clothes</a></li>
+                        <li><a class="font-new1 " href="menclothes.html ">Men's clothes</a></li>
+
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown ">
+                    <a href="# " class="dropdown-toggle nav-link font-new1 " data-toggle="dropdown " role="button " aria-haspopup="true " aria-expanded="true "> <span class="nav-label ">Hot</span> <span class="caret "></span></a>
+                    <ul class="dropdown-menu dropdown-content ">
+                        <li><a class="font-new1 " href="couple.html ">Couple clothes</a></li>
+                        <li><a class="font-new1 " href="seasonal.html ">Seasonal clothes</a></li>
+
+                    </ul>
+                </li>
+
+                <li class="nav-item ">
+                    <a class="nav-link font-new1 " href="introduce.html ">Introduce<span class="sr-only ">(current)</span></a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link font-new1 " href="contact.html ">Contact<span class="sr-only ">(current)</span></a>
+                </li>
+                <li class="nav-item active ">
+                    <a class="nav-link font-new1 " href="shoping-card.html ">Card<i class="fa fa-cart-plus " aria-hidden="true "></i><span class="sr-only ">(current)</span></a>
+                </li>
+            </ul>
+        </div>
+        <ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex ">
+           <form class="form-inline my-2 my-lg-0 ">
+              <input class="form-control mr-sm-2 " type="search " placeholder="Search " >
+              <button class="btn btn-outline-light my-2 my-sm-0 " type="submit " id="search "><a>Search</a><i class="fa fa-search " aria-hidden="true "></i></button>
+         
+          </li>               
+      </ul>
+     </nav>
+    </header>
+    <!--cart-->
+    <div class="container ">
+        
+        <div class="cart ">
+
+            <div class="products ">
+
+                <div class="product ">
+
+                    <img src="images/a5.jpg ">
+
+                    <div class="product-info ">
+
+                        <h3 class="product-name ">Women T-shirt</h3>
+
+                        <h4 class="product-price ">Price: 99.000đ</h4>
+                       
+                        <p class="product-quantity ">Quantity: <input value="1 " name=" ">
+
+                        <h4 class="product-offer ">Total: 99.000đ</h4>
+    
+
+                            <p class="product-remove ">
+
+                                <i class="fa fa-trash " aria-hidden="true "></i>
+
+                                <span class="remove ">Remove</span>
+
+                            </p>
+
+                    </div>
+
+                </div>
+                <div class="product ">
+
+                    <img src="images/a3.jpg ">
+
+                    <div class="product-info ">
+
+                        <h3 class="product-name ">Women T-shirt</h3>
+
+                        <h4 class="product-price ">Price: 99.000đ</h4>
+
+                        <p class="product-quantity ">Quantity: <input value="1 " name=" ">
+
+                        <h4 class="product-offer ">Total: 99.000đ</h4>
+
+                            <p class="product-remove ">
+
+                                <i class="fa fa-trash " aria-hidden="true "></i>
+
+                                <span class="remove ">Remove</span>
+
+                            </p>
+
+                    </div>
+
+                </div>
+                <div class="product ">
+
+                    <img src="images/t3.jpg ">
+
+                    <div class="product-info ">
+
+                        <h3 class="product-name ">Men T - shirt</h3>
+
+                        <h4 class="product-price ">Price: 99.000đ</h4>
+                        
+                        <p class="product-quantity ">Quantity:  <input value="1 " name=" ">
+
+                        <h4 class="product-offer ">Total: 99.000đ</h4>
+
+                       
+
+                            <p class="product-remove ">
+
+                                <i class="fa fa-trash " aria-hidden="true "></i>
+
+                                <span class="remove ">Remove</span>
+
+                            </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="cart-total ">
+                <a href="management_oder.html " style="background:white;margin-left: 10px; ">
+                    <i class="fa fa-list " aria-hidden="true "  style="font-size:30px; "></i>
+               </a>
+                <p>
+                    <span>Subtotal:</span>
+
+                    <span>297.000đ</span>
+                </p>
+             
+
+                <p>
+
+                    <span>Number of Items</span>
+
+                    <span>3</span>
+
+                </p>
+                <p>
+                    <span>Address</span>
+                    <span><input class="address " type="text " placeholder="90 Pham Duc Nam " ></span>
+                </p>
+                <p>
+                    <span>Number Phone</span>
+                    <span><input class="numphone " type="text " placeholder="0365352924 "></span>
+                </p>
+              
+                <p>
+
+                    <span class="ship ">Transport fee</span>
+
+                    <span class="ship ">23.000đ</span>
+
+                </p>
+               
+                  <span><input class="code " type="text "name="coupon " placeholder="Coupon Code "></span>
+                 <span><button class="btn-code ">Apply</button></span>
+
+               
+
+                <p>
+
+                    <span class="total "><b>Total Price</b></span>
+
+                    <span class="total "><b>320.000đ</b></span>
+
+                </p>
+                
+                <a class="OK " href="# ">Proceed to Checkout</a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+       
+    
+<footer class="bg-cl ">
+  <div class="container-fluid ">
+
+      <div class="row ">
+          <div class="col-3 ">
+              <div class="address ">
+                  <ul class="nav-link text-light ">
+                      <li class="nav-link font-new1 " style="color: rgb(29, 0, 107); ">Shop sytem</li>
+                      <div class="Thrive ">
+                          <ul class="nav-link ">
+                              <li>
+                                  <a class="font-new1 text-dark " href="# ">90 Thái Hà, Q.Đống Đa, Hà Nội</a>
+                              </li>
+                              <li>
+                                  <a class="font-new1 text-dark " href="# ">20 Dương Quảng Hàm, Q.Cầu Giấy,Hà Nội</a>
+                              </li>
+                              <li>
+                                  <a class="font-new1 text-dark " href="# ">40 Đaị Cổ Việt, Q.Hai Bà Trưng,Hà Nội</a>
+                              </li>
+                              <li>
+                                  <a class="font-new1 text-dark " href="# ">90 Phạm Đức Nam,Q.Ngũ Hành Sơn, ĐN</a>
+                              </li>
+                              <li>
+                                <a class="font-new1 text-dark " href="# ">40 Lê Duẫn, Q.Thanh Khê, ĐN</a>
+                              </li>
+                              <li>
+                                <a class="font-new1 text-dark " href="# ">433 Nơ Trang Long, Q.Bình Thạnh,HCM</a>
+                              </li>
+                          </ul>
+                      </div>
+                      </li>
+
+
+                  </ul>
+              </div>
+          </div>
+          <div class="col-2 ">
+
+              <div class="Thrive ">
+                  <li class="nav-link font-new1 " style="color: rgb(29, 0, 107); ">Need Help?</li>
+                  <ul class="nav-link ">
+                      <li>
+                          <a class="font-new1 text-dark " href="https://coccoc.com/search?query=covid-19 ">COVID-19</a>
+                      </li>
+                      <li>
+                          <a class="font-new1 text-dark " href="# ">FAQ</a>
+                      </li>
+                      <li>
+                          <a class="font-new1 text-dark " href="# ">Ordering guide</a>
+                      </li>
+                      <li>
+                          <a class="font-new1 text-dark " href="# ">Payment - Delivery </a>
+                      </li>
+                      <li>
+                          <a class="font-new1 text-dark " href="# ">Privacy Policy</a>
+                      </li>
+                      <li>
+                          <a class="font-new1 text-dark " href="# ">Cookie Policy</a>
+                      </li>
+                  </ul>
+              </div>
+              </li>
+          </div>
+          <div class="col-4 ">
+              <div class="Thrive>">
+    <div id="contact" class="text-center">
+        <address>
+          <p class="font-new2" style="font-size: 30px; color: rgb(138, 0, 0);"> <a  style="color: rgb(0, 0, 0);" href="indexlg.html">NKV-Fashion</a> Shop Adress :</p>
+          <a style="font-size: 20px; color: rgb(29, 0, 107);font-family:tahoma ;" href="https://www.google.com/maps/place/90+Ph%E1%BA%A1m+%C4%90%E1%BB%A9c+Nam,+Ho%C3%A0+Qu%C3%BD,+Ng%C5%A9+H%C3%A0nh+S%C6%A1n,+%C4%90%C3%A0+N%E1%BA%B5ng+550000,+Vietnam/@15.9884923,108.2351325,17z/data=!3m1!4b1!4m5!3m4!1s0x31421a761e40ff21:0x3718426f5183f41a!8m2!3d15.9884923!4d108.2373212">90 Phạm Đức Nam, Hòa Hải, Ngũ Hành Sơn, Đà Nẵng</a><br>
+          Hotline:<a style="font-size: 20px; color: rgb(29, 0, 107);font-family:'Times' ;"> 0352893091 </a><br>
+          Email:<a style="font-size: 20px; color: rgb(29, 0, 107);" href="https://mail.google.com/mail/u/1/#inboxs"> nangnkv22@gmail.com</a>
+      </address>
+    </div>
+    </div>
+    </div>
+    <div class="col-3">
+        <div class="nav-link follow-us-r text-light font-new1">Follow us</div><br>
+        <div class="follow-us">
+            <ul class="follow-mg">
+                <li class="na-iteam">
+                    <a class="nav-link p-2" href="https://www.facebook.com/hinangne.3091/"><i class="fa fa-facebook-square" aria-hidden="true" style="font-size: 40px;" ></i></a>
+                </li>
+                <li class="na-iteam">
+                    <a class="nav-link p-2" href="https://www.facebook.com/hinangne.3091/"><i class="fa fa-twitter-square"  aria-hidden="true" style="font-size: 40px;" ></i></a>
+                </li>
+                <li class="na-iteam">
+                    <a class="nav-link p-2" href="https://www.instagram.com/nang.nkv/"><i class="fa fa-instagram" aria-hidden="true" style="font-size: 40px;" ></i></a>
+                </li>
+                <li class="na-iteam">
+                    <a class="nav-link p-2" href="#"><i class="fa fa-google-plus" aria-hidden="true" style="font-size: 40px;" ></i></a>
+                </li>
+            </ul>
+            <div class="app">
+                <ul>
+                    <li>
+                        <a class="nav-link p-2" href="https://appstore.vn/"><img src="images/appstore.png" class="img-rounded" width="85" height="30"></a>
+                    </li>
+                    <li>
+                        <a class="nav-link p-2" href="https://play.google.com/store?hl=vi&gl=US"><img src="images/Google-Play-logo.jpg" class="img-rounded" width="85" height="30"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    </footer>
+
+    </body>
+
+
+</html>

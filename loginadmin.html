@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Admin</title>
+    <link rel="stylesheet " href="bootstrap/bootstrap.min.css">
+    <script src="Js/jquery-3.6.0.min.js"></script>
+    <script src="Js/popper.min.js"></script>
+    <script src="bootstrap/bootstrap.min.js"></script>
+    <link rel="stylesheet " type="text/css " href="css/loginadmin.css ">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <form>
+            <div class="back" id="body"><a href="index.html"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i></a></i>
+            </div>
+            <label class="labelAd" for="Admin">Admin</label>
+            <div class="icon"><i class="fa fa-lock" aria-hidden="true"></i></div>
+            <div class="row">
+
+                <div class="col-sm-12 form-field">
+                    <label class="label" for="message">Username</label>
+                    <input id="username" class="input-text " type="text" placeholder="user" required>
+                </div>
+                <div class="col-sm-12 form-field">
+                    <label class="label" for="message">Password</label>
+                    <input id="pass" class="input-pass " type="password" placeholder="pass" required>
+                </div>
+                <div class="col-sm-12 form-field">
+                    <button class="submit-btn" onclick="check()" type="submit"><a id="ok">Submit</a></button>
+
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+<script>
+    function check() {
+        var user = document.getElementById("username").value;
+        var pass = document.getElementById("pass").value;
+        if ((pass == "12345") && (user == "admin")) {
+            alert("Welcome to admin ");
+            document.getElementById("ok").setAttribute("href", "admin.html");
+        } else if (pass == "" || user == "") {
+            alert("Username and password must not be left blank");
+        } else {
+            alert("Wrong username or password")
+        }
+    }
+</script>
+
+</html>

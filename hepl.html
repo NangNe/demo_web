@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet " href="bootstrap/bootstrap.min.css">
+    <script src="bootstrap/bootstrap.min.js"></script>
+    <script src="Js/jquery-3.6.0.min.js"></script>
+    <script src="Js/popper.min.js"></script>
+    <link rel="stylesheet " type="text/css " href="css/admin.css ">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <title>Admin-Help</title>
+</head>
+
+<body style="background: rgb(209, 222, 247);">
+
+    <div class="header">
+    </div>
+    <div class="navigation">
+        <ul>
+
+            <li>
+                <a href="admin.html">
+                    <span class="icon"><i class="fa fa-home" aria-hidden="true"></i></span>
+                    <span class="title">Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="mange-ad.html">
+                    <span class="icon"><i class="fa fa-list" aria-hidden="true"></i></span>
+                    <span class="title">Manage</span>
+                </a>
+            </li>
+            <li>
+                <a href="contact-ad.html">
+                    <span class="icon"><i class="fa fa-comment" aria-hidden="true"></i></span>
+                    <span class="title">Contact</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <span class="icon"><i class="fa fa-question-circle" aria-hidden="true"></i></span>
+                    <span class="title">Help</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="index.html">
+                    <span class="icon"><i class="fa fa-sign-out" aria-hidden="true"></i></span>
+                    <span class="title">Sign out</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <a style="font-size:50px;color: rgb(12, 12, 2);">What help do you need?</a>
+    </div>
+
+    <input class=" search-hepler" placeholder="Enter question" type="search">
+    <button class="btn btn-hepl">Search <i class="fa fa-search" style="font-size: 50px;"></i></button>
+
+    <div class="toggle" onclick="toggleMenu()">
+
+    </div>
+</body>
+<script type="text/javascript">
+    function toggleMenu() {
+        let navigation = document.querySelector('.navigation');
+        let toggle = document.querySelector('.toggle');
+        navigation.classList.toggle('active');
+        toggle.classList.toggle('active');
+    }
+</script>
+
+</html>

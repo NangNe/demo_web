@@ -1,0 +1,706 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet " href="bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="Js/jquery-3.6.0.min.js"></script>
+    <script src="Js/popper.min.js"></script>
+    <script src="bootstrap/bootstrap.min.js"></script>
+    <link rel="stylesheet " type="text/css " href="css/style.css ">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <title>Home</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-cl menu_position">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="navbar-brand" href="index.html">
+                            <img class="img-circle" src="images/logo.png" width="35" height="30" alt="">
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <h5 class="nav-link font-new text-warning"> NKV Fashion</h5>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link font-new1" href="index.html">Home<span class="sr-only">(current)</span></a>
+                    </li>
+
+                    <li class="nav-item dropdown ">
+                        <a href="#" class="dropdown-toggle nav-link font-new1" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true"> <span class="nav-label">Gender</span> <span class="caret"></span></a>
+                        <ul class="dropdown-menu dropdown-content">
+                            <li><a class="font-new1 " href="girlclothes.html">Girl clothes</a></li>
+                            <li><a class="font-new1 " href="menclothes.html">Men's clothes</a></li>
+
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown ">
+                        <a href="#" class="dropdown-toggle nav-link font-new1" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true"> <span class="nav-label">Hot</span> <span class="caret"></span></a>
+                        <ul class="dropdown-menu dropdown-content">
+                            <li><a class="font-new1 " href="couple.html">Couple clothes</a></li>
+                            <li><a class="font-new1 " href="seasonal.html">Seasonal clothes</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link font-new1" href="introduce.html">Introduce<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link font-new1" href="contact.html">Contact<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link font-new1" href="shoping-card.html"><i class="fa fa-cart-plus" aria-hidden="true" style="font-size:30px"></i><span class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+            </div>
+
+
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2 " type="search " placeholder="Search ">
+                <button class="btn btn-outline-light my-2 my-sm-0 " type="submit" id="search "><a class="Search">Search</a><i class="fa fa-search" aria-hidden="true"></i></button>
+            </form>
+            <li class="nav-item dropdown dropleft ">
+                <a href="#" class="dropdown-toggle nav-link font-new1" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true"> <span class="nav-label"><i class="fa fa-user" aria-hidden="true" style="font-size: 35px;"></i></span> <span class="caret"></span></a>
+
+                <ul class="dropdown-menu dropdown-content ">
+                    <li>
+                        <a class="nav-item nav-link dropdown-toggle " href="#" id="bd-versions" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-user" aria-hidden="true" style="font-size: 15px; "></i>Login</a>
+
+                        <div class="dropdown-menu " aria-labelledby="bd-versions">
+                            <form class="form-horizontal">
+                                <!-- form Login-->
+                                <div class="auth-form">
+                                    <div class="auth-form__container">
+                                        <div class="auth-form__header">
+                                            <h3 class="auth-form__heading">LOGIN</h3>
+                                            <div>
+                                                <a href="loginadmin.html"><i class="fa fa-lock"  style="font-size: 25px;" aria-hidden="true"></i></a>
+                                            </div>
+                                        </div>
+
+                                        <div class="auth-form__form">
+                                            <div class="auth-form__group">
+
+                                                <input class="auth-form__input" type="text" id="username" placeholder="Your email">
+                                            </div>
+                                            <div class="auth-form__group">
+                                                <input class="auth-form__input" type="password" id="password" placeholder="Your password">
+                                            </div>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label><input type="checkbox" > Remember me</label>
+                                        </div>
+                                        <div class="auth-form__controls">
+                                            <button class="btn btn--primary" onclick="checkk()"><a id="ok">Login</a></button>
+                                        </div>
+                                        <div class="auth-form__aside">
+                                            <div class="auth-form-help">
+                                                <a href="#" class="auth-form__help-link auth-form-help-fogot">Forgot password</a>
+                                                <span class="auth-form-help-separate">
+                                                    </span>
+                                                <a href="#" class="auth-form__help-link">Need help?</a>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+
+                                    <div class="auth-form__socials">
+                                        <a href="#" class="btn btn--with-icon btn--size-s auth-form__socials--facebook">
+                                            <i class="fa fa-facebook-square auth-form__socials-icon"></i>
+
+                                            <span class="auth-form__socials-title">
+                                                    Sign in with Facebook
+                                                </span>
+                                        </a>
+                                        <a href="#" class="btn btn--with-icon btn--size-s auth-form__socials--google">
+                                            <i class="fa fa-google auth-form__socials-icon"></i>
+                                            <span class="auth-form__socials-title">
+                                                    Sign in with google
+                                                </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                    </li>
+                    <li>
+                        <a class="nav-item nav-link dropdown-toggle mr-md-2" href="#" id="bd-versions" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+                            <i class="fa fa-registered" aria-hidden="true" style="font-size: 15px;"></i>Registration</a>
+                        <!--form registration-->
+                        <div class="dropdown-menu " aria-labelledby="bd-versions">
+                            <form class="form-horizontal">
+                                <div class="auth-form">
+                                    <div class="auth-form__container">
+                                        <div class="auth-form__header">
+                                            <h3 class="auth-form__heading">Registration</h3>
+                                        </div>
+
+                                        <div class="auth-form__form">
+                                            <div class="auth-form__group">
+                                                <input class="auth-form__input" type="text" placeholder="Your email" id="username">
+                                            </div>
+                                            <div class="auth-form__group">
+                                                <input class="auth-form__input" type="password" placeholder="Your password" id="pass">
+                                            </div>
+                                            <div class="auth-form__group">
+                                                <input class="auth-form__input" type="password" placeholder="Enter the password" id="passw">
+                                            </div>
+                                        </div>
+
+                                        <div class="auth-form__aside">
+                                            <div class="checkbox">
+                                                <label class="auth-form__policy-text"><input type="checkbox">By registering, you agree to Nkv- Shop about <a href="# " style="color: rgb(219, 186, 95); ">Terms of Service</a> &
+                                                            <a href="# " style="color: rgb(219, 186, 95);">Privacy Policy</label>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="auth-form__controls ">
+                                            <button class="btn btn--primary " onclick="check()">Registration</button>
+                                        </div>
+                                    </div>
+
+                                    <div class="auth-form__socials ">
+                                        <a href="# " class="btn btn--with-icon btn--size-s auth-form__socials--facebook ">
+                                            <i class="fa fa-facebook-square auth-form__socials-icon "></i>
+                                            <span class="auth-form__socials-title ">
+                                                       Connect with Facebook
+                                                    </span>
+                                        </a>
+                                        <a href="# " class="btn btn--with-icon btn--size-s auth-form__socials--google ">
+                                            <i class="fa fa-google auth-form__socials-icon "></i>
+                                            <span class="auth-form__socials-title ">
+                                                        Connect with google
+                                                    </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </li>
+                </ul>
+
+        </nav>
+    </header>
+
+
+    <div id="caro " class="carousel " data-ride="carousel ">
+        <ol class="carousel-indicators chamxanh ">
+            <li data-target="#caro " data-slide-to="0 " class="active "></li>
+            <li data-target="#caro " data-slide-to="1 "></li>
+            <li data-target="#caro " data-slide-to="2 "></li>
+            <li data-target="#caro " data-slide-to="3 "></li>
+        </ol>
+        <div id="caro" class="carousel" data-ride="carousel">
+            <ol class="carousel-indicators chamxanh">
+                <li data-target="#caro" data-slide-to="0" class="active"></li>
+                <li data-target="#caro" data-slide-to="1"></li>
+                <li data-target="#caro" data-slide-to="2"></li>
+                <li data-target="#caro" data-slide-to="3"></li>
+            </ol>
+            <div class="carousel-inner pdgt" style="border: 1px solid #000;">
+                <div class="carousel-item active ig-c bg-secondary" data-interval="10000">
+                    <img src="images/a11.jpg" width="960" height="700" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <div class="jumbotron1">
+                            <h1 class="font-new text-danger ">Men's shirts</h1>
+                            <p style="color: rgb(0, 0, 0);font-size: 22px;font-family:cursive ;">Make the wearer attractive and luxurious.</p>
+                            <button class="btn btn-t my-2 my-sm-0 font-new1 text-danger" type="submit"><a href="menclothes.html"> Learn more >></a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item ig-c" data-interval="5000">
+                    <img src="images/a23.jpg" width="960" height="640" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block text-light center">
+                        <div class="jumbotron1">
+                            <h1 class="font-new ">Dress</h1>
+                            <p style="color: rgb(4, 0, 255);font-size: 22px;font-family: cursive;">Gentle, simple, personality, dynamic, beautiful .</p>
+                            <button class="btn btn-t my-2 my-sm-0 font-new1 text-danger" type="submit"><a href="girlclothes.html"> Learn more >></a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item ig-c">
+                    <img src="images/a33.jpg" width="960" height="640" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block text-light center">
+                        <div class="jumbotron1">
+                            <h1 class="font-new text-warning">Couple clothes</h1>
+                            <p style="color: rgb(0, 0, 0);font-size: 22px;font-family:cursive;">For couples in love.</p>
+                            <button class="btn btn-t my-2 my-sm-0 font-new1 text-danger" type="submit"><a href="couple.html"> Learn more >></a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item ig-c">
+                    <img src="images/a44.jpg" width="960" height="640" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block text-light center">
+                        <div class="jumbotron1">
+                            <h1 class="font-new " style="color: rgb(4, 0, 255);">Seasonal clothes</h1>
+                            <p style="color: rgb(0, 0, 0);font-size: 22px;font-family:cursive;">Cool,fashionable.</p>
+                            <button class="btn btn-t my-2 my-sm-0 font-new1 text-danger" type="submit"><a href="seasonal.html"> Learn more >></a></button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <a class="carousel-control-prev" href="#caro" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#caro" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+
+
+        <div class="container paddingT ">
+            <h1 class="text-dark text-center font-new2 ">Featured products</h1>
+            <hr class="featurette-divider ">
+            <div class="row " style="background-image:url( 'images/bg.jpg'); ">
+                <div class="col-md-7 font-new2">
+                    <h2 class="featurette-heading ">Spring and autumn clothes </h2>
+                    <p class="lead ">
+                        Is the season when all things proliferate and the weather is warm and pleasant. Autumn is also a season when the climate is cool and comfortable. In these two seasons, you should choose clothes that are sewn with soft, light, loose materials, with many
+                        patterns and fun textures to always feel happy and comfortable.
+                    </p>
+                    <a href="seasonal.html" class="btn btn-success ">Click here >></a>
+                </div>
+                <div class="col-md-5 font-new2">
+                    <img class="img-circle " src="images/slide-01.jpg " width="100% " height="100% " fill="#eee ">
+                </div>
+            </div>
+
+
+            <hr class="featurette-divider ">
+            <div class="row featurette " style="background-image:url( 'images/bg.jpg'); ">
+                <div class="col-md-7 order-md-2 font-new2 ">
+                    <h2 class="featurette-heading ">Summer clothes</h2>
+                    <p class="lead ">
+                        In the summer, the weather is hot and the temperature is high, making people more irritable and frustrated than usual. You should choose clothes with cool, cool colors to create a pleasant feeling for those around you. In addition, you should also choose
+                        clothes that are sewn with soft, cool, sweat-absorbent fabrics to always feel comfortable and comfortable. Simple, sophisticated with Vietnamese fashion brand
+                    </p>
+                    <a href="seasonal.html" class="btn btn-success ">Click here >></a>
+                </div>
+                <div class="col-md-5 order-md-1 ">
+                    <img class="img-circle " src="images/slide-02.jpg " width="100% " height="100% " fill="#eee ">
+                </div>
+            </div>
+
+
+            <hr class="featurette-divider ">
+            <div class="row featurette " style="background-image:url( 'images/bg.jpg'); ">
+                <div class="col-md-7 ">
+                    <h2 class="featurette-heading " id="oran ">Winter clothes</h2>
+                    <p class="lead ">
+                        It is advisable to choose clothes made of thick, light fabrics, preferably natural fur coats that keep the body warm, aesthetic and not too heavy, no one wants to wear. a few extra kilos on your body right?
+                    </p>
+                    <a href="seasonal.html" class="btn btn-success ">Click here >></a>
+                </div>
+                <div class="col-md-5 ">
+                    <img class="img-circle " src="images/slide-03.jpg " width="100% " height="100% " fill="#eee ">
+                </div>
+            </div>
+            <hr class="featurette-divider ">
+        </div>
+
+
+        <div class="container " id="menu1 " style="background-color:#fffbfb ;border: 1px solid #000;">
+            <h1 class="text-dark text-center font-new2 ">Men's shirts</h1>
+            <div class="row ">
+                <div class="col-sm-4 paddingT ">
+                    <div class="card " style="width: 22rem; ">
+                        <img src="images/s1.jpg " class="card-img-top img-rounded " alt="... ">
+                        <div class="card-body ">
+                            <h5 class="card-title ">Men's shirts</h5>
+                            <p class="card-text ">Make the wearer attractive and luxurious.</p>
+                            <strong><price class="padR ">99.000đ</price></strong>
+                            <a href="# " class="btn btn-success ">Add to card<i class="fa fa-cart-plus " aria-hidden="true " style="margin-left: 5px; "></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 paddingT ">
+                    <div class="card " style="width: 22rem; ">
+                        <img src="images/s2.jpg " class="card-img-top img-rounded " alt="... ">
+                        <div class="card-body ">
+                            <h5 class="card-title ">Men's shirts</h5>
+                            <p class="card-text ">Make the wearer attractive and luxurious.</p>
+                            <strong><price class="padR ">99.000đ</price></strong>
+                            <a href="# " class="btn btn-success ">Add to card<i class="fa fa-cart-plus " aria-hidden="true " style="margin-left: 5px; "></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 paddingT ">
+                    <div class="card " style="width: 22rem; ">
+                        <img src="images/s3.jpg " class="card-img-top img-rounded " alt="... ">
+                        <div class="card-body ">
+                            <h5 class="card-title ">Men's shirts</h5>
+                            <p class="card-text ">Make the wearer attractive and luxurious.</p>
+                            <strong><price class="padR ">99.000đ</price></strong>
+                            <a href="# " class="btn btn-success ">Add to card<i class="fa fa-cart-plus " aria-hidden="true " style="margin-left: 5px; "></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 paddingT ">
+                    <div class="card " style="width: 22rem; ">
+                        <img src="images/s4.jpeg " class="card-img-top img-rounded " alt="... ">
+                        <div class="card-body ">
+                            <h5 class="card-title ">Men's shirts</h5>
+                            <p class="card-text ">Make the wearer attractive and luxurious.</p>
+                            <strong><price class="padR ">99.000đ</price></strong>
+                            <a href="# " class="btn btn-success ">Add to card<i class="fa fa-cart-plus " aria-hidden="true " style="margin-left: 5px; "></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 paddingT ">
+                    <div class="card " style="width: 22rem; ">
+                        <img src="images/s5.jpg " class="card-img-top img-rounded " alt="... ">
+                        <div class="card-body ">
+                            <h5 class="card-title ">Men's shirts</h5>
+                            <p class="card-text ">Make the wearer attractive and luxurious.</p>
+                            <strong><price class="padR ">99.000đ</price></strong>
+                            <a href="# " class="btn btn-success ">Add to card<i class="fa fa-cart-plus " aria-hidden="true " style="margin-left: 5px; "></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 paddingT ">
+                    <div class="card " style="width: 22rem; ">
+                        <img src="images/s6.jpg " class="card-img-top img-rounded " alt="... ">
+                        <div class="card-body ">
+                            <h5 class="card-title ">Men's shirts</h5>
+                            <p class="card-text ">Make the wearer attractive and luxurious.</p>
+                            <strong><price class="padR ">99.000đ</price></strong>
+                            <a href="# " class="btn btn-success ">Add to card<i class="fa fa-cart-plus " aria-hidden="true " style="margin-left: 5px; "></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><br>
+
+        <div class="container " id="menu2 " style="background-color:#fffbfb ;border: 1px solid #000;">
+            <h1 class="text-dark text-center font-new2 ">Dress</h1>
+            <div class="row ">
+                <div class="col-sm-4 paddingT ">
+                    <div class="card " style="width: 22rem; ">
+                        <img src="images/e1.jpg " class="card-img-top img-rounded " alt="... ">
+                        <div class="card-body ">
+                            <h5 class="card-title ">Dress</h5>
+                            <p class="card-text ">Gentle, simple, personality, dynamic, beautiful.</p>
+                            <strong><price class="padR ">99.000đ</price></strong>
+                            <a href="# " class="btn btn-success ">Add to card<i class="fa fa-cart-plus " aria-hidden="true " style="margin-left: 5px; "></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 paddingT ">
+                    <div class="card " style="width: 22rem; ">
+                        <img src="images/e2.jpg " class="card-img-top img-rounded " alt="... ">
+                        <div class="card-body ">
+                            <h5 class="card-title ">Dress</h5>
+                            <p class="card-text ">Gentle, simple, personality, dynamic, beautiful.</p>
+                            <strong><price class="padR ">99.000đ</price></strong>
+                            <a href="# " class="btn btn-success ">Add to card<i class="fa fa-cart-plus " aria-hidden="true " style="margin-left: 5px; "></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 paddingT ">
+                    <div class="card " style="width: 22rem; ">
+                        <img src="images/e3.jpg " class="card-img-top img-rounded " alt="... ">
+                        <div class="card-body ">
+                            <h5 class="card-title ">Dress</h5>
+                            <p class="card-text ">Gentle, simple, personality, dynamic, beautiful.</p>
+                            <strong><price class="padR ">99.000đ</price></strong>
+                            <a href="# " class="btn btn-success ">Add to card<i class="fa fa-cart-plus " aria-hidden="true " style="margin-left: 5px; "></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 paddingT ">
+                    <div class="card " style="width: 22rem; ">
+                        <img src="images/e4.jpg " class="card-img-top img-rounded " alt="... ">
+                        <div class="card-body ">
+                            <h5 class="card-title ">Dress</h5>
+                            <p class="card-text ">Gentle, simple, personality, dynamic, beautiful.</p>
+                            <strong><price class="padR ">99.000đ</price></strong>
+                            <a href="# " class="btn btn-success ">Add to card<i class="fa fa-cart-plus " aria-hidden="true " style="margin-left: 5px; "></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 paddingT ">
+                    <div class="card " style="width: 22rem; ">
+                        <img src="images/e5.jpg " class="card-img-top img-rounded " alt="... ">
+                        <div class="card-body ">
+                            <h5 class="card-title ">Dress</h5>
+                            <p class="card-text ">Gentle, simple, personality, dynamic, beautiful.</p>
+                            <strong><price class="padR ">99.000đ</price></strong>
+                            <a href="# " class="btn btn-success ">Add to card<i class="fa fa-cart-plus " aria-hidden="true " style="margin-left: 5px; "></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 paddingT ">
+                    <div class="card " style="width: 22rem; ">
+                        <img src="images/e6.jpg " class="card-img-top img-rounded " alt="... ">
+                        <div class="card-body ">
+                            <h5 class="card-title ">Dress</h5>
+                            <p class="card-text ">Gentle, simple, personality, dynamic, beautiful.</p>
+                            <strong><price class="padR ">99.000đ</price></strong>
+                            <a href="# " class="btn btn-success ">Add to card<i class="fa fa-cart-plus " aria-hidden="true " style="margin-left: 5px; "></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><br>
+
+
+
+        <div class="container " id="menu " style="background-color:#fffbfb ;border: 1px solid #000;">
+            <h1 class="text-dark text-center font-new2 ">Couple clothes</h1>
+            <div class="row ">
+                <div class="col-sm-4 paddingT ">
+                    <div class="card " style="width: 22rem; ">
+                        <img src="images/d1.jpg " class="card-img-top img-rounded " alt="... ">
+                        <div class="card-body ">
+                            <h5 class="card-title ">Couple clothes</h5>
+                            <p class="card-text ">For couples in love.</p>
+                            <strong><price class="padR ">99.000đ</price></strong>
+                            <a href="# " class="btn btn-success ">Add to card<i class="fa fa-cart-plus " aria-hidden="true " style="margin-left: 5px; "></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 paddingT ">
+                    <div class="card " style="width: 22rem; ">
+                        <img src="images/d2.jpg " class="card-img-top img-rounded " alt="... ">
+                        <div class="card-body ">
+                            <h5 class="card-title ">Couple clothes</h5>
+                            <p class="card-text ">For couples in love.</p>
+                            <strong><price class="padR ">99.000đ</price></strong>
+                            <a href="# " class="btn btn-success ">Add to card<i class="fa fa-cart-plus " aria-hidden="true " style="margin-left: 5px; "></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 paddingT ">
+                    <div class="card " style="width: 22rem; ">
+                        <img src="images/d3.jpg " class="card-img-top img-rounded " alt="... ">
+                        <div class="card-body ">
+                            <h5 class="card-title ">Couple clothes</h5>
+                            <p class="card-text ">For couples in love.</p>
+                            <strong><price class="padR ">99.000đ</price></strong>
+                            <a href="# " class="btn btn-success ">Add to card<i class="fa fa-cart-plus " aria-hidden="true " style="margin-left: 5px; "></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 paddingT ">
+                    <div class="card " style="width: 22rem; ">
+                        <img src="images/d4.jpg " class="card-img-top img-rounded " alt="... ">
+                        <div class="card-body ">
+                            <h5 class="card-title ">Couple clothes</h5>
+                            <p class="card-text ">For couples in love.</p>
+                            <strong><price class="padR ">99.000đ</price></strong>
+                            <a href="# " class="btn btn-success ">Add to card<i class="fa fa-cart-plus " aria-hidden="true " style="margin-left: 5px; "></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 paddingT ">
+                    <div class="card " style="width: 22rem; ">
+                        <img src="images/d5.jpg " class="card-img-top img-rounded " alt="... ">
+                        <div class="card-body ">
+                            <h5 class="card-title ">Couple clothes</h5>
+                            <p class="card-text ">For couples in love.</p>
+                            <strong><price class="padR ">99.000đ</price></strong>
+                            <a href="# " class="btn btn-success ">Add to card<i class="fa fa-cart-plus " aria-hidden="true " style="margin-left: 5px; "></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 paddingT ">
+                    <div class="card " style="width: 22rem; ">
+                        <img src="images/d6.jpg " class="card-img-top img-rounded " alt="... ">
+                        <div class="card-body ">
+                            <h5 class="card-title ">Couple clothes</h5>
+                            <p class="card-text ">For couples in love.</p>
+                            <strong><price class="padR ">99.000đ</price></strong>
+                            <a href="# " class="btn btn-success ">Add to card<i class="fa fa-cart-plus " aria-hidden="true " style="margin-left: 5px; "></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main " style="background-color: #CFCFCF; border: 1px solid rgb(255, 0, 0);">
+            <div class="container pdgt ">
+                <div class="row ">
+                    <div class="col-md-4 ">
+                        <div class="single_abouts_text text-center wow slideInLeft " data-wow-duration="1s ">
+                            <img src="images/gt1.jpg " width="450px " height="550px " alt=" " />
+                        </div>
+                    </div>
+                    <div class="col-md-4 "></div>
+
+                    <div class="col-md-4 ">
+                        <div class="single_abouts_text wow slideInRight " data-wow-duration="1s ">
+                            <a href="index.html " style="color: red;font-family:cursive;font-size:40px; ">NKV-Fashion</a>
+                            <h4>IT'S BEAUTIFUL TO WEAR</h4>
+                            <p>Introduce...</p>
+                            <a href="introduce.html " class="btn btn-success ">Click here >></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <footer class="bg-cl ">
+            <div class="container-fluid ">
+
+                <div class="row ">
+                    <div class="col-3 ">
+                        <div class="address ">
+                            <ul class="nav-link text-light ">
+                                <li class="nav-link font-new1 " style="color: rgb(29, 0, 107); ">Shop sytem</li>
+                                <div class="Thrive ">
+                                    <ul class="nav-link ">
+                                        <li>
+                                            <a class="font-new1 text-dark " href="# ">90 Thái Hà, Q.Đống Đa, Hà Nội</a>
+                                        </li>
+                                        <li>
+                                            <a class="font-new1 text-dark " href="# ">20 Dương Quảng Hàm, Q.Cầu Giấy,Hà Nội</a>
+                                        </li>
+                                        <li>
+                                            <a class="font-new1 text-dark " href="# ">40 Đaị Cổ Việt, Q.Hai Bà Trưng,Hà Nội</a>
+                                        </li>
+                                        <li>
+                                            <a class="font-new1 text-dark " href="# ">90 Phạm Đức Nam,Q.Ngũ Hành Sơn, ĐN</a>
+                                        </li>
+                                        <li>
+                                            <a class="font-new1 text-dark" href="#">40 Lê Duẫn, Q.Thanh Khê, ĐN</a>
+                                        </li>
+                                        <li>
+                                            <a class="font-new1 text-dark" href="#">433 Nơ Trang Long, Q.Bình Thạnh,HCM</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                </li>
+
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-2 ">
+
+                        <div class="Thrive ">
+                            <li class="nav-link font-new1 " style="color: rgb(29, 0, 107); ">Need Help?</li>
+                            <ul class="nav-link ">
+                                <li>
+                                    <a class="font-new1 text-dark " href="https://coccoc.com/search?query=covid-19 ">COVID-19</a>
+                                </li>
+                                <li>
+                                    <a class="font-new1 text-dark " href="# ">FAQ</a>
+                                </li>
+                                <li>
+                                    <a class="font-new1 text-dark " href="# ">Ordering guide</a>
+                                </li>
+                                <li>
+                                    <a class="font-new1 text-dark " href="# ">Payment - Delivery </a>
+                                </li>
+                                <li>
+                                    <a class="font-new1 text-dark " href="# ">Privacy Policy</a>
+                                </li>
+                                <li>
+                                    <a class="font-new1 text-dark " href="# ">Cookie Policy</a>
+                                </li>
+                            </ul>
+                        </div>
+                        </li>
+                    </div>
+                    <div class="col-4 ">
+                        <div class="Thrive>">
+                            <div id="contact" class="text-center">
+                                <address>
+                <p class="font-new2" style="font-size: 30px; color: rgb(138, 0, 0);"> <a  style="color: rgb(0, 0, 0);" href="index.html">NKV-Fashion</a> Shop Adress :</p>
+                <a style="font-size: 20px; color: rgb(29, 0, 107);font-family:tahoma ;" href="https://www.google.com/maps/place/90+Ph%E1%BA%A1m+%C4%90%E1%BB%A9c+Nam,+Ho%C3%A0+Qu%C3%BD,+Ng%C5%A9+H%C3%A0nh+S%C6%A1n,+%C4%90%C3%A0+N%E1%BA%B5ng+550000,+Vietnam/@15.9884923,108.2351325,17z/data=!3m1!4b1!4m5!3m4!1s0x31421a761e40ff21:0x3718426f5183f41a!8m2!3d15.9884923!4d108.2373212">90 Phạm Đức Nam, Hòa Hải, Ngũ Hành Sơn, Đà Nẵng</a><br>
+                Hotline:<a style="font-size: 20px; color: rgb(29, 0, 107);font-family:'Times' ;"> 0352893091 </a><br>
+                Email:<a style="font-size: 20px; color: rgb(29, 0, 107);" href="https://mail.google.com/mail/u/1/#inboxs"> nangnkv22@gmail.com</a>
+            </address>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="nav-link follow-us-r text-light font-new1">Follow us</div><br>
+                        <div class="follow-us">
+                            <ul class="follow-mg">
+                                <li class="na-iteam">
+                                    <a class="nav-link p-2" href="https://www.facebook.com/hinangne.3091/"><i class="fa fa-facebook-square" aria-hidden="true" style="font-size: 40px;"  ></i></a>
+                                </li>
+                                <li class="na-iteam">
+                                    <a class="nav-link p-2" href="https://www.facebook.com/hinangne.3091/"><i class="fa fa-twitter-square"  aria-hidden="true" style="font-size: 40px;" ></i></a>
+                                </li>
+                                <li class="na-iteam">
+                                    <a class="nav-link p-2" href="https://www.instagram.com/nang.nkv/"><i class="fa fa-instagram" aria-hidden="true" style="font-size: 40px;" ></i></a>
+                                </li>
+                                <li class="na-iteam">
+                                    <a class="nav-link p-2" href="#"><i class="fa fa-google-plus" aria-hidden="true" style="font-size: 40px;" ></i></a>
+                                </li>
+                            </ul>
+                            <div class="app">
+                                <ul>
+                                    <li>
+                                        <a class="nav-link p-2" href="https://appstore.vn/"><img src="images/appstore.png" class="img-rounded" width="85" height="30"></a>
+                                    </li>
+                                    <li>
+                                        <a class="nav-link p-2" href="https://play.google.com/store?hl=vi&gl=US"><img src="images/Google-Play-logo.jpg" class="img-rounded" width="85" height="30"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+        </footer>
+
+</body>
+
+<script>
+    function check() {
+        var email = document.getElementById("username").value;
+        var pass = document.getElementById("pass").value;
+        var passw = document.getElementById("passw").value;
+        if (pass == "" || email == "") {
+            alert("Username and password must not be left blank");
+        } else if (pass.length < 8) {
+            alert("Password has a minimum of 8 characters");
+        } else if (!validateEmail(email)) {
+            alert("Wrong email format")
+        } else alert("OK");
+    }
+
+    function validateEmail(email) {
+        const re = /\S+@\S+\.\S+/;
+        return re.test(String(email).toLowerCase());
+    }
+
+    function checkk() {
+        var user = document.getElementById("username").value;
+        var pass = document.getElementById("password").value;
+        if ((pass == "huynhdat2102") && (user == "nhdat.20it1@vku.udn.vn")) {
+            document.getElementById("ok").setAttribute("href", "indexlg.html");
+        } else if (pass == "" || user == "") {
+            alert("Username and password must not be left blank");
+        } else {
+            alert("Wrong username or password")
+        }
+    }
+</script>
+
+
+</html>
